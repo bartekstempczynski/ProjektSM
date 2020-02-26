@@ -1,4 +1,4 @@
-#include <Brzozowe_Funkcje.h>
+#include <MojeFunkcje.h>
 
 
 
@@ -6,9 +6,10 @@
 
 
 /**
- *  @brief Ta funkcja odczytuje natezenie swiatla z czujnika BH1750, nie przyjmuje zadnych argumentow
+ *  @brief Ta funkcja odczytuje pomiary natezenia swiatla z czujnika, a jako 
+ *   argument przyjmuje wskaznik do zmiennej, do ktorej ma zostac pomiar  zapisany 
 
- *  @retval Wartosc natezenia wyrazona w LUX
+ *  @retval Brak
  */
 void ZmierzLUX(uint16_t *WartoscOdczytu)
 {
@@ -20,11 +21,10 @@ void ZmierzLUX(uint16_t *WartoscOdczytu)
 
 
 /**
- *  @brief Ta funkcja ma na celu odswiezac wyswietlacz LCD poprzez usuniecie wszystkich
- *  znakow i ponowne zapisanie ich z czestotliowscia uzalezniona od zegara przez ktory bedzie wywolywana
+ *  @brief Ta funkcja odswieza wyswietlacz LCD
  *
- *  @param WartoscWejsciowa Pierwszy argument typu int bedacy wartoscia zadana z zakresu 0-99999999
- *  @param WartoscOdczytu Drugi argument typu int bedacy wartoscia odczytana z czujnika z zakresu 0-99999999
+ *  @param WartoscWejsciowa argument typu uint16_t bedacy war zadana
+ *  @param WartoscOdczytu  argument typu uint16_t bedacy wartoscia odczytana
  *
  *  @retval brak
  */

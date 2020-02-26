@@ -34,6 +34,7 @@
 #include "bh1750.h"
 #include "stdio.h"
 #include "string.h"
+#include "MojeFunkcje.h"
 
 
 
